@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="styless.css" rel="stylesheet" />
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <ul>
+          <li><a href="#">JobUp</a></li>
+          <li><a href="#">DASHBOARD</a></li>
+          <li><a href="#">HISTORY</a></li>
+          <li><a href="#">PROFILE</a></li>
+        </ul>
+      </header>
+      <!-- Main -->
+      <main>
+        <!-- Left section -->
+        <section class="newTask">
+          <div class="newTaskAdd">+ NEW TASK</div>
+        </section>
+        <!-- right section -->
+        <section class="serviceOrder serviceOrder_hidden">
+          <form action="#" id="task">
+            <div class="serviceOrder_new serviceOrder_all">
+              <h5>NEW TASK</h5>
+              <p id="text_task">I need</p>
+              <p id="show_location">
+                My adress
+              </p>
+              <button id="createNewTask">CREATE TASK</button>
+            </div>
+            <div class="serviceOrder_location serviceOrder_all">
+              <h5>LOCATION</h5>
+              <input
+                id="location"
+                type="text"
+                value=" Lagos 10128"
+                placeholder="141 Ogunlana Dr, Lagos 10128"
+              />
+            </div>
+            <div class="serviceOrder_serviceType serviceOrder_all">
+              <h5>SERVICE TYPE</h5>
+              <div class="serviceType">
+                <figure class="electrian">
+                  <img class="electrian" src="img/electician.png" alt="elec" />
+                  <figcaption class="electrian">Electrian</figcaption>
+                </figure>
+
+                <figure class="plumber">
+                  <img class="plumber" src="img/plumber.png" alt="elec" />
+                  <figcaption class="plumber">Plumber</figcaption>
+                </figure>
+                <figure class="gardener">
+                  <img class="gardener" src="img/Gardener.png" alt="elec" />
+                  <figcaption class="gardener">Gardener</figcaption>
+                </figure>
+                <figure class="housekeeper">
+                  <img
+                    class="housekeeper"
+                    src="img/housekeeper.png"
+                    alt="elec"
+                  />
+                  <figcaption class="housekeeper">Housekeeper</figcaption>
+                </figure>
+                <figure class="cook">
+                  <img class="cook" src="img/cook.png" alt="elec" />
+                  <figcaption class="cook">Cook</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="serviceOrder_plumber serviceOrder_all">
+              <h5>PLUMBER TASKS</h5>
+              <div>
+                <div class="serviceOrder_plumber_task" id="unblockToilet">
+                  Unblock a toilet
+                </div>
+                <div class="serviceOrder_plumber_task">Unblock a sink</div>
+                <div class="serviceOrder_plumber_task">Fix a water leak</div>
+                <div class="serviceOrder_plumber_task">Install a sink</div>
+                <div class="serviceOrder_plumber_task">Instal a shower</div>
+                <div class="serviceOrder_plumber_task">Instal a toilet</div>
+              </div>
+            </div>
+            <div class="serviceOrder_descripton serviceOrder_all">
+              <h5>TASK DESCRIPTION</h5>
+              <input id="taskDescriptionText" type="text" />
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </body>
+</html>
